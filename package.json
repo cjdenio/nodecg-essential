@@ -1,0 +1,57 @@
+{
+  "name": "nodecg-essential",
+  "version": "0.0.0",
+  "description": "Essential graphics for NodeCG.",
+  "homepage": "",
+  "author": {
+    "name": "Caleb Denio",
+    "email": "caleb@deniosoftware.com",
+    "url": "https://calebdenio.me"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "*",
+    "dashboardPanels": [
+      {
+        "name": "lower-thirds",
+        "title": "Lower Thirds",
+        "width": 2,
+        "file": "lower-thirds.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "lower-thirds.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^4.2.1",
+    "html-webpack-plugin": "^4.3.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "gsap": "^3.5.0",
+    "vue": "^2.6.11"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  }
+}
