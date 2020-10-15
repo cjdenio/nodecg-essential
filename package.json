@@ -39,7 +39,7 @@
   "repository": "https://github.com/nodecg/nodecg",
   "license": "MIT",
   "devDependencies": {
-    "css-loader": "^4.2.1",
+    "css-loader": "^4.3.0",
     "html-webpack-plugin": "^4.3.0",
     "vue-loader": "^15.9.3",
     "vue-template-compiler": "^2.6.11",
@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "gsap": "^3.5.0",
+    "style-loader": "^2.0.0",
     "vue": "^2.6.11"
   },
   "scripts": {

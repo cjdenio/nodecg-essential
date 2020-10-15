@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h2>{{ counter }}</h2>
-    <button @click="counter++">Up</button>
+    <input type="text" v-model="name" />
+    <button @click="show(name)">Show</button>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 /// <reference path="../../../../types/browser.d.ts" />
 
 import Vue from 'vue';
@@ -13,15 +13,12 @@ import { gsap } from 'gsap';
 
 export default Vue.extend({
   data: () => {
-    return { counter: 0 };
+    return { name: '' };
   },
   methods: {
-    show(name: string) {},
-  },
-  created() {
-    nodecg.listenFor('lower-third', m => {
-      this.show(m.name);
-    });
+    show(name) {
+      nodecg.sendMessage('lower-third', { name });
+    },
   },
 });
 </script>
