@@ -8,7 +8,7 @@
 import gsap from 'gsap';
 
 export default {
-  data: () => ({ name: 'Caleb', tween: null }),
+  data: () => ({ name: '', tween: null }),
   methods: {
     show(name) {
       this.name = name;
